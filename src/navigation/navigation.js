@@ -13,8 +13,38 @@ function Navigation() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Peta" component={DetailScreen} />
+        <Stack.Screen 
+          name="Home"
+          component={HomeScreen}
+          options={{ 
+            title: 'LIST NEGARA', 
+            headerStyle: {
+              backgroundColor: '#A3E3FA',
+            }, 
+            // headerTintColor: '#fff',
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+              fontSize: 25,
+            },
+          }} 
+        />
+        <Stack.Screen 
+          name="Peta" 
+          component={DetailScreen} 
+          options={{ 
+            title: 'PETA NEGARA', 
+            headerStyle: {
+              backgroundColor: '#A3E3FA',
+            }, 
+            // headerTintColor: '#fff',
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+              fontSize: 25,
+            },
+          }} 
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

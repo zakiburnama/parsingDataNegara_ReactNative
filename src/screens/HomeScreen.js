@@ -5,7 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import Navigation from '../navigation/navigation';
 // import Navigation from './src/navigation/navigation';
 
-class App extends Component{
+class HomeScreen extends Component{
   constructor(){
     super();
     this.state={
@@ -48,7 +48,6 @@ class App extends Component{
   render(){
     return (
       <View style={styles.body}>
-        {/* <Text style={{backgroundColor: '#A3E3FA', textAlign:'center', fontSize:25, padding:10, fontFamily:'sans-serif-medium'}}>Countries List</Text> */}
         <FlatList
           data={this.state.data}
           renderItem = {this.renderItem}
@@ -60,7 +59,7 @@ class App extends Component{
   }
 }
 
-export default App;
+export default HomeScreen;
 
 
 const styles = StyleSheet.create({

@@ -1,6 +1,4 @@
-import React, {Component} from 'react';
-
-import { FlatList, Text, TouchableHighlight, View, ToastAndroid, } from 'react-native';
+import React from 'react';
 import Navigation from './src/navigation/navigation';
 
 export default function App() {
